@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Login</h1>
+    <form>
+        <div class="form-goup">
+            <label for="username">Username</label>
+            <input type="text" class="form-control"
+                    name="username" id="username"
+                    placeholder="Username" [(ngModel)]="loginData.username">
+        </div>
+        <div class="form-goup">
+            <label for="password">Password</label>
+            <input type="password" class="form-control"
+                    name="password" id="password"
+                    placeholder="Password" [(ngModel)]="loginData.password">
+        </div>
+
+        <button  class="btn btn-success" tpye="submit" (click)="login()">Login</button>
+
+    </form>
+</div>

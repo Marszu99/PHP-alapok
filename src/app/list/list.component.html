@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Players list</h1>
+    <button class="btn btn-success" routerLink="/form"> Create new player </button>
+    <table class="table table-bordered">
+        <thead>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+            <th width="200px">Actions</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let adat of service.adatom">
+                <td>{{adat.id}}</td>
+                <td>{{adat.first_name}}</td>
+                <td>{{adat.last_name}}</td>
+                <td>{{adat.position}}</td>
+            <button class="btn btn-info" (click)="player(adat)" (click)="getPlayer(adat.id)">Details</button>
+            <button class="btn btn-primary" (click)="player(adat)" (click)="editPlayer(adat.id)">Edit</button>
+            <button class="btn btn-danger" (click)="deletePlayer(adat)">Delete</button>
+            </tr>
+        </tbody>
+    </table>
+</div>

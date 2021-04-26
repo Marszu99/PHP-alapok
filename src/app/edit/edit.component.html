@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Edit Player</h1>
+    <form>
+        <div *ngFor="let player of service.player">
+            <div>
+                <strong>ID:</strong>
+                <p>{{ player.id }}</p>
+            </div>
+            <div class="form-goup">
+                <label for="first_nameinput">FirstName</label>
+                <input type="text" class="form-control"
+                        name="first_nameinput" id="first_nameinput"
+                        [(ngModel)]="player.first_name">
+            </div>
+            <div class="form-goup">
+                <label for="last_nameinput">LastName</label>
+                <input type="text" class="form-control"
+                        name="last_nameinput" id="last_nameinput"
+                        [(ngModel)]="player.last_name">
+            </div>
+            <div class="form-goup">
+                <label for="positioninput">Position</label>
+                <input type="text" class="form-control"
+                        name="positioninput" id="positioninput"
+                        [(ngModel)]="player.position">
+            </div>
+
+            <button  class="btn btn-success" tpye="submit" (click)="edit()">Edit</button>
+            <button  class="btn btn-danger" routerLink="/list">Back</button>
+        </div>
+    </form>
+</div>

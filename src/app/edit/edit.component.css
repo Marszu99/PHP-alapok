@@ -1,0 +1,11 @@
+.ID{
+    width: 100%;
+}
+strong{
+    float: left;
+    width: 3%;
+}
+p{
+    width: 97%;
+    float: left;
+}

@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Create New Player</h1>
+    <form>
+        <div class="form-goup">
+            <label for="idinput">ID</label>
+            <input type="number" class="form-control"
+                    name="idinput" id="idinput"
+                    placeholder="ID" [(ngModel)]="adat.id">
+        </div>
+        <div class="form-goup">
+            <label for="first_nameinput">FirstName</label>
+            <input type="text" class="form-control"
+                    name="first_nameinput" id="first_nameinput"
+                    placeholder="Enter first name" [(ngModel)]="adat.first_name">
+        </div>
+        <div class="form-goup">
+            <label for="last_nameinput">LastName</label>
+            <input type="text" class="form-control"
+                    name="last_nameinput" id="last_nameinput"
+                    placeholder="Enter last name" [(ngModel)]="adat.last_name">
+        </div>
+        <div class="form-goup">
+            <label for="positioninput">Position</label>
+            <input type="text" class="form-control"
+                    name="positioninput" id="positioninput"
+                    placeholder="Choose position" [(ngModel)]="adat.position">
+        </div>
+
+        <button  class="btn btn-success" tpye="submit" (click)="save()">Submit</button>
+        <button  class="btn btn-danger" routerLink="/list">Back</button>
+    </form>
+</div>

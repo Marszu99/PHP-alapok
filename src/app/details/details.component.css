@@ -1,0 +1,11 @@
+.container{
+    width: 100%;
+}
+strong{
+    float: left;
+    width: 10%;
+}
+p{
+    width: 90%;
+    float: left;
+}
